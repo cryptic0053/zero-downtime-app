@@ -5,9 +5,9 @@ metadata:
 spec:
   selector:
     app: zero-downtime
-    version: v1   # switch this to v2 for green
+    version: v1  # or v2 for green
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 8000
+      port: 8000        # external port (NodePort target)
+      targetPort: 8000  # port your Django app runs on
   type: NodePort
