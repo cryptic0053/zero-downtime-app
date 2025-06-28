@@ -4,4 +4,4 @@ from django.shortcuts import render
 from django.http import JsonResponse
 
 def get_version(request):
-    return JsonResponse({"version": "1.0.0"})
+    return JsonResponse({"version": "2.0.0"})
